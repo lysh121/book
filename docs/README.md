@@ -1,3 +1,5 @@
+
+
 # 1. HTML
 
 ## 1.1 设置整体链接的打开状态
@@ -66,32 +68,132 @@ fieldset 元素可将表单内的相关元素分组，打包
 
 ### 1.4.3 新增的input type属性值
 
-| 类型     | 使用示例                | 含义                 |
-| -------- | ----------------------- | -------------------- |
-| email    | <input type="email">    | 输入邮箱格式         |
-| tel      | <input type="tel">      | 输入手机号码格式     |
-| url      | <input type="url">      | 输入url格式          |
-| number   | <input type="number">   | 输入数字格式         |
-| search   | <input type="search">   | 搜索框（体现语义化） |
-| range    | <input type="range">    | 自由拖动滑块         |
-| time     | <input type="time">     | 小时分钟             |
-| date     | <input type="date">     | 年月日               |
-| datetime | <input type="datetime"> | 时间                 |
-| month    | <input type="month">    | 年月                 |
-| week     | <input tyoe="week">     | 年 星期              |
-| color    | <input type="color">    | 颜色                 |
+- email：输入邮箱格式
+
+  ```html
+  <input type="email">
+  ```
+
+- tel：输入手机号码格式
+
+  ```html
+  <input type="tel">
+  ```
+
+- url：输入url格式
+
+  ```html
+  <input type="url">
+  ```
+
+- number：输入数字格式
+
+  ```html
+  <input type="number">
+  ```
+
+- search：搜索框（体现语义化）
+
+  ```html
+  <input type="search">
+  ```
+
+- range：自由拖动滑块
+
+  ```html
+  <input type="range">
+  ```
+
+- time：小时分钟
+
+  ```html
+  <input type="time">
+  ```
+
+- date：年月日
+
+  ```html
+  <input type="date">
+  ```
+
+- datetime：时间
+
+  ```html
+  <input type="datetime">
+  ```
+
+- month：年月
+
+  ```html
+  <input type="month">
+  ```
+
+- week：年 星期
+
+  ```html
+  <input tyoe="week">
+  ```
+
+- color：颜色
+
+  ```html
+  <input type="color">
+  ```
+
+  
 
 ### 1.4.4 常用新属性
 
-| 属性         | 用法                                                         | 含义                                                         |
-| ------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| placeholder  | <input type="text" placeholder="请输入用户名">               | 占位符提供可描述输入字段预期值的提示信息                     |
-| autofocus    | <input type="text" autofocus>                                | 规定当页面加载时 input 元素应该自动获得焦点                  |
-| multiple     | <input type="file" multiple>                                 | 多文件上传                                                   |
-| accept       | <input type="file" accept=".jpg,.png" ><br /><input type="file" accept="image/*" > | 规定上传的文件类型                                           |
-| autocomplete | <input type="text" autocomplete>                             | 规定表单是否应该启用自动完成功能 有两个值，一个是on，一个是off，on代表记录已经输入的值 |
-| required     | <input type="text" required>                                 | 必填项                                                       |
-| accesskey    | <input type="text" accesskey="s">                            | 规定激活（使元素获得焦点）元素的快捷键 采用alt+字母的形式    |
+- placeholder：占位符提供可描述输入字段预期值的提示信息
+
+  ```html
+  <input type="text" placeholder="请输入用户名">
+  ```
+
+- autofocus：规定当页面加载时 input 元素应该自动获得焦点
+
+  ```html
+  <input type="text" autofocus>
+  ```
+
+- multiple：多文件上传
+
+  ```html
+  <input type="file" multiple>
+  ```
+
+- accept：规定上传的文件类型
+
+  ```html
+  <input type="file" accept=".jpg,.png" >
+  <input type="file" accept="image/*" >
+  ```
+
+- autocomplete：规定表单是否应该启用自动完成功能 有两个值，一个是on，一个是off，on代表记录已经输入的值
+
+  ```html
+  <input type="text" autocomplete='on'>
+  ```
+
+- required：必填项
+
+  ```html
+  <input type="text" required>
+  ```
+
+- accesskey：规定激活（使元素获得焦点）元素的快捷键 采用alt+字母的形式
+
+  ```html
+  <input type="text" accesskey="s">
+  ```
+
+- readonly：只读
+
+  ```html
+  <input type="text" readonly>
+  ```
+
+  
 
 ## 1.5 多媒体标签
 
@@ -148,7 +250,7 @@ fieldset 元素可将表单内的相关元素分组，打包
 - :hover   鼠标移动到链接
 - :active   选定的链接
 
-`被点击访问过的超链接样式不再具有hover和active了，解决方式为设置css样式时按照l-v-h-a的顺序设置。`
+> 被点击访问过的超链接样式不再具有hover和active了，解决方式为设置css样式时按照l-v-h-a的顺序设置。
 
 ### 2.2.2 结构伪类选择器
 
@@ -226,12 +328,12 @@ a {
 
 ## 4.1 JS数据类型
 
-## 4.1.1 查看数据类型
+### 4.1.1 查看数据类型
 
 - typeof 数据;
 - typeof(数据);
 
-## 4.1.2 数据类型转换
+### 4.1.2 数据类型转换
 
 #### 其他类型 转数字类型
 
@@ -293,7 +395,6 @@ undefined和null不能使用这个方式变成字符串；
   
   var res4 = Boolean(undefined); 
   console.log(res4); //输出false
-  
   ```
 
 ## 4.2 流程控制
@@ -340,7 +441,6 @@ undefined和null不能使用这个方式变成字符串；
     var s = now.getSeconds();
     return y + '-' + patchZero(m) + '-' + patchZero(d) + ' ' + patchZero(h) + ":" + patchZero(mm) + ':' + patchZero(s);
   }
-
 ```
 
 
@@ -356,7 +456,6 @@ undefined和null不能使用这个方式变成字符串；
 ```javascript
 var obj = new Object(); // 这是一个没有属性和方法的对象
 console.log(obj);
-
 ```
 
 - 字面量：
@@ -364,7 +463,6 @@ console.log(obj);
 ```javascript
 var obj = {}; // 这也是一个没有属性和方法对象，其本质和构造函数创建的对象是一样的
 console.log(obj,typeof obj);
-
 ```
 
 #### 添加
@@ -1034,7 +1132,7 @@ dom.style.width；
 
 - appendChild：
 
-  - 给制定的父元素追加子元素，**作为最后一个子元素；从后添加一个子元素**
+  - 给指定的父元素追加子元素，**作为最后一个子元素；从后添加一个子元素**
 
     ```js
     // 元素.appendChild(子元素);
@@ -1461,7 +1559,7 @@ fadeTo([[speed],opacity,[easing],[fn]])【注意fadeTo必须写两个参数，sp
 
 
 
-# 7. jS高级
+# 7. jS 高级
 
 ## 7.1 ES6 类class
 
@@ -1490,7 +1588,7 @@ fadeTo([[speed],opacity,[easing],[fn]])【注意fadeTo必须写两个参数，sp
 
   
 
-# 8 ajax
+# 8. ajax
 
 ## 8.1 ajax请求方式
 
@@ -1534,3 +1632,8 @@ xhr.onload=function(){
     - 格式：aa==xxx&bb=yyy
     - 查询字符串知识和传输少量数据
 
+### POST请求
+
+# 9. HTTP协议
+
+## 9.1 

@@ -51,11 +51,11 @@ fieldset 元素可将表单内的相关元素分组，打包
 
 ### 自动记录input标签输入内容（autocomplete）
 
-* 使用要求
+- 使用要求
 
-  * 需要提交按钮
+  - 需要提交按钮
 
-  * 表单必须有名字
+  - 表单必须有名字
 
     ```html
     <form action="">
@@ -66,81 +66,81 @@ fieldset 元素可将表单内的相关元素分组，打包
 
 ### 新增的input type属性值
 
-* email：输入邮箱格式
+- email：输入邮箱格式
 
   ```html
   <input type="email">
   ```
 
-* tel：输入手机号码格式
+- tel：输入手机号码格式
 
   ```html
   <input type="tel">
   ```
 
-* url：输入url格式
+- url：输入url格式
 
   ```html
   <input type="url">
   ```
 
-* number：输入数字格式
+- number：输入数字格式
 
   ```html
   <input type="number">
   
   ```
 
-* search：搜索框（体现语义化）
+- search：搜索框（体现语义化）
 
   ```html
   <input type="search">
   
   ```
 
-* range：自由拖动滑块
+- range：自由拖动滑块
 
   ```html
   <input type="range">
   
   ```
 
-* time：小时分钟
+- time：小时分钟
 
   ```html
   <input type="time">
   
   ```
 
-* date：年月日
+- date：年月日
 
   ```html
   <input type="date">
   
   ```
 
-* datetime：时间
+- datetime：时间
 
   ```html
   <input type="datetime">
   
   ```
 
-* month：年月
+- month：年月
 
   ```html
   <input type="month">
   
   ```
 
-* week：年 星期
+- week：年 星期
 
   ```html
   <input tyoe="week">
   
   ```
 
-* color：颜色
+- color：颜色
 
   ```html
   <input type="color">
@@ -151,28 +151,28 @@ fieldset 元素可将表单内的相关元素分组，打包
 
 ### 常用新属性
 
-* placeholder：占位符提供可描述输入字段预期值的提示信息
+- placeholder：占位符提供可描述输入字段预期值的提示信息
 
   ```html
   <input type="text" placeholder="请输入用户名">
   
   ```
 
-* autofocus：规定当页面加载时 input 元素应该自动获得焦点
+- autofocus：规定当页面加载时 input 元素应该自动获得焦点
 
   ```html
   <input type="text" autofocus>
   
   ```
 
-* multiple：多文件上传
+- multiple：多文件上传
 
   ```html
   <input type="file" multiple>
   
   ```
 
-* accept：规定上传的文件类型
+- accept：规定上传的文件类型
 
   ```html
   <input type="file" accept=".jpg,.png" >
@@ -180,28 +180,28 @@ fieldset 元素可将表单内的相关元素分组，打包
   
   ```
 
-* autocomplete：规定表单是否应该启用自动完成功能 有两个值，一个是on，一个是off，on代表记录已经输入的值
+- autocomplete：规定表单是否应该启用自动完成功能 有两个值，一个是on，一个是off，on代表记录已经输入的值
 
   ```html
   <input type="text" autocomplete='on'>
   
   ```
 
-* required：必填项
+- required：必填项
 
   ```html
   <input type="text" required>
   
   ```
 
-* accesskey：规定激活（使元素获得焦点）元素的快捷键 采用alt+字母的形式
+- accesskey：规定激活（使元素获得焦点）元素的快捷键 采用alt+字母的形式
 
   ```html
   <input type="text" accesskey="s">
   
   ```
 
-* readonly：只读
+- readonly：只读
 
   ```html
   <input type="text" readonly>
@@ -212,27 +212,26 @@ fieldset 元素可将表单内的相关元素分组，打包
 
 ## 1.5 多媒体标签
 
-* **embed** 可以用来插入各种多媒体，格式可以是Midi、Wav、AIFF、AU、MP3等等。
+- **embed** 可以用来插入各种多媒体，格式可以是Midi、Wav、AIFF、AU、MP3等等。
 
   ```html
   <embed src="http://..." allowFullscreen="true" quality="high" width="480" height="400" align></embed>
   
   ```
 
-
-* **audio** 音频播放，autoplay自动播放；controls显示控件；loop循环播放
-* **video** 视频播放
+- **audio** 音频播放，autoplay自动播放；controls显示控件；loop循环播放
+- **video** 视频播放
 
 ## 1.6 H5新增标签
 
 H5具有语义的布局标签：
 
-* header 头部标签
-* footer 底部标签
-* section 区块标签
-* article 文本内容标签
-* aside 侧边标签
-* nav 导航
+- header 头部标签
+- footer 底部标签
+- section 区块标签
+- article 文本内容标签
+- aside 侧边标签
+- nav 导航
 
 ## 1.6 命名规范
 
@@ -251,44 +250,92 @@ H5具有语义的布局标签：
 
 # 2 CSS
 
-## 2.1 字体
+## 2.1 fonts
 
 - **font-style:字体风格**
   - normal 默认值
   - italic：斜体字体样式
   - oblique：倾斜字体样式
 
-* **font：综合设置字体样式**
+- **font：综合设置字体样式**
 
   选择器{font：font-style font-weight font-size/line-height font-family}
 
-* letter-spacing、word-spacing字间距
+## 2.2 texts
 
-  * letter-spacing中英文都生效
-    * 可用于消除inline-block元素间的换行符空格间隙问题。
-  * word-spacing只对英文单词生效
+- letter-spacing 字间距
+  - 中英文都生效
+  - 可用于消除inline-block元素间的换行符空格间隙问题。
+- word-spacing 字符间距
+  - word-spacing只对英文单词生效
+- line-height 行间距
+- text-indent 首行缩进
 
-## 2.2 伪类选择器
+## 2.3 溢出文字隐藏
+
+- white-space
+
+  - normal
+  - nowrap 强制一行内显示文字
+
+- text-overflow 文字溢出
+
+  - clip 不显示省略号，简单的裁切
+  - ellipsis 当前文本溢出时显示省略标记
+
+- 使用三部曲
+
+  - 单行显示
+
+  ```css
+  /*1. 先强制一行内显示文本*/
+      white-space: nowrap;
+  /*2. 超出的部分隐藏*/
+      overflow: hidden;
+  /*3. 文字用省略号替代超出的部分*/
+      text-overflow: ellipsis;
+  
+  ```
+
+  - 多行显示
+
+  ```css
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  /*控制显示几行*/
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  
+  ```
+
+## 2.4 background
+
+- **background-attachment  附着**
+  - scroll :背景图像是随对象内容滚动
+  - fixed : 背景图像固定(固定在body上)
+
+## 2.5 伪类选择器
 
 ### 链接伪类选择器
 
-* :link  未访问的链接
-* :visited  已访问的链接
-* :hover   鼠标移动到链接
-* :active   选定的链接
+- :link  未访问的链接
+- :visited  已访问的链接
+- :hover   鼠标移动到链接
+- :active   选定的链接
 
 > 被点击访问过的超链接样式不再具有hover和active了，解决方式为设置css样式时按照l-v-h-a的顺序设置。
 
-###  结构伪类选择器
+### 结构伪类选择器
 
-* E:first-child      匹配父元素下第一个类型为E的子元素
-* E:last-child       匹配父元素下最后一个类型为E的子元素
-* E:nth-child(n)  匹配父元素下第n个类型为E的子元素
-* E:nth-child(even)   偶数
-* E:nth-child(odd)    奇数
-* E:first-of-type与E:first-child区别
-* :first-child 匹配的是某父元素的第一个子元素，可以说是结构上的第一个子元素。
-  * :first-of-type 匹配的是某父元素下相同类型子元素中的第一个
+- E:first-child      匹配父元素下第一个类型为E的子元素
+- E:last-child       匹配父元素下最后一个类型为E的子元素
+- E:nth-child(n)  匹配父元素下第n个类型为E的子元素
+- E:nth-child(even)   偶数
+- E:nth-child(odd)    奇数
+- E:first-of-type与E:first-child区别
+- :first-child 匹配的是某父元素的第一个子元素，可以说是结构上的第一个子元素。
+  - :first-of-type 匹配的是某父元素下相同类型子元素中的第一个
 
 # 3 CSS3
 
@@ -296,39 +343,39 @@ H5具有语义的布局标签：
 
 ### 位移
 
-* 语法：**`transform:translate(x,y)`**
-* 说明：
-  * translate最多设置2个值，第一个值是水平，第二个值是垂直。
-  * translate偏移的位置，参照的是自身原有的位置。
-  * translate若设置负值时，会实现逆方向移动。
-  * 若设置一个值时，只有水平方向有效。
-  * 可以设置百分比，百分比参照的是自身的大小。
-  * 特点：若仅仅只是位移，盒子不会脱标。盒子原有的位置还在标准流中 
+- 语法：**`transform:translate(x,y)`**
+- 说明：
+  - translate最多设置2个值，第一个值是水平，第二个值是垂直。
+  - translate偏移的位置，参照的是自身原有的位置。
+  - translate若设置负值时，会实现逆方向移动。
+  - 若设置一个值时，只有水平方向有效。
+  - 可以设置百分比，百分比参照的是自身的大小。
+  - 特点：若仅仅只是位移，盒子不会脱标。盒子原有的位置还在标准流中 
 
 ### 旋转
 
-* 语法：**`transform:retate(角度)`**
-* 说明：
-  * 单位：deg
-  * 正值：顺时针旋转
-  * 负值：逆时针旋转
+- 语法：**`transform:retate(角度)`**
+- 说明：
+  - 单位：deg
+  - 正值：顺时针旋转
+  - 负值：逆时针旋转
 
 ### 旋转源点设置
 
-* 语法：**`transform-origin:水平 垂直`**
-* 说明：
-  * 默认是按照中心旋转的
-  * 水平取值：left|center|right|像素
-  * 垂直取值：top|center|bottom|像素
+- 语法：**`transform-origin:水平 垂直`**
+- 说明：
+  - 默认是按照中心旋转的
+  - 水平取值：left|center|right|像素
+  - 垂直取值：top|center|bottom|像素
 
 ### 缩放
 
-* 语法：`**transform:scale(number,number)**`
-* 说明：
-  * 最多设置2个值，第一个值表示缩放宽度，第二个值表示高度
-  * 缩小：若设置的值大于0小于1表示缩小
-  * 放大：若设置的值大于1表示放大多少倍
-  * 若设置一个值时，表示宽高一起缩放多少倍。
+- 语法：`**transform:scale(number,number)**`
+- 说明：
+  - 最多设置2个值，第一个值表示缩放宽度，第二个值表示高度
+  - 缩小：若设置的值大于0小于1表示缩小
+  - 放大：若设置的值大于1表示放大多少倍
+  - 若设置一个值时，表示宽高一起缩放多少倍。
 
 ## 3.2 动画
 
@@ -369,42 +416,42 @@ H5具有语义的布局标签：
 
 ### 调用动画
 
->| 属性                      | 描述                                                         |
->| ------------------------- | ------------------------------------------------------------ |
->| @keyframes                | 定义动画                                                     |
->| animation-name            | 规定@keyframes动画的名称                                     |
->| animation-duration        | 规定动画完成一个周期所花费的时间                             |
->| animation-timing-function | 规定动画的速度曲线。默认是ease缓冲，linear匀速，steps（数字）步长 |
->| animation-delay           | 规定动画何时开始。默认是0                                    |
->| animation-iteration-count | 规定动画被播放的次数。默认是1，infinite无限次                |
->| animation-direction       | 动画是否在下一周期逆向播放。默认normal，alternate逆向播放    |
->| animation-play-state      | 动画是否正在运行或暂停。默认running，paused暂停              |
->| animation-fill-mode       | 规定动画结束后状态。保持forwards，回到起始位置backwards      |
->| animation                 | 所有动画属性的简写属性，顺序为：动画名称、动画持续时间、运动曲线、延迟时间、动画次数、是否逆播、是否保持结束状态 |
+> | 属性                      | 描述                                                         |
+> | ------------------------- | ------------------------------------------------------------ |
+> | @keyframes                | 定义动画                                                     |
+> | animation-name            | 规定@keyframes动画的名称                                     |
+> | animation-duration        | 规定动画完成一个周期所花费的时间                             |
+> | animation-timing-function | 规定动画的速度曲线。默认是ease缓冲，linear匀速，steps（数字）步长 |
+> | animation-delay           | 规定动画何时开始。默认是0                                    |
+> | animation-iteration-count | 规定动画被播放的次数。默认是1，infinite无限次                |
+> | animation-direction       | 动画是否在下一周期逆向播放。默认normal，alternate逆向播放    |
+> | animation-play-state      | 动画是否正在运行或暂停。默认running，paused暂停              |
+> | animation-fill-mode       | 规定动画结束后状态。保持forwards，回到起始位置backwards      |
+> | animation                 | 所有动画属性的简写属性，顺序为：动画名称、动画持续时间、运动曲线、延迟时间、动画次数、是否逆播、是否保持结束状态 |
 
 ## 3.3 3D转换
 
 ### 介绍
 
-* 特点：
-  * 近大远小
-  * 物体后面遮挡不可见
+- 特点：
+  - 近大远小
+  - 物体后面遮挡不可见
 
 ### 位移
 
-* 语法：
-  * reansform: translateX(位移量)[translateY、translateZ]
+- 语法：
+  - reansform: translateX(位移量)[translateY、translateZ]
 
 ### 透视
 
-* 语法：
-  * perspective：像素值
-  * 设置给父元素
+- 语法：
+  - perspective：像素值
+  - 设置给父元素
 
 ### 旋转
 
-* 语法：
-  * reansform:rotateX(角度)[rotateY、rotateZ]
+- 语法：
+  - reansform:rotateX(角度)[rotateY、rotateZ]
 
 ### 立体空间设置
 
@@ -447,87 +494,132 @@ normalize.css
 
 ## 4.3 盒子模型
 
-* 语法：
-  * box-sizing:border-box;（ie盒子模型：css中设置的width中包含了border和padding）
-  * box-sizing:content-box;（W3C标准盒子模型：盒子宽度为width+border+padding）
+- 语法：
+  - box-sizing:border-box;（ie盒子模型：css中设置的width中包含了border和padding）
+  - box-sizing:content-box;（W3C标准盒子模型：盒子宽度为width+border+padding）
 
 ## 4.5 flex布局
 
 ### 传统布局和flex布局
 
-* 传统布局：
-  * 兼容性好
-  * 布局繁琐
-  * 局限性，不能在移动端很好的布局
-* flex布局：
-  * 操作方便，布局极为简单，移动端应用很广泛
-  * PC端浏览器支持情况较差
+- 传统布局：
+  - 兼容性好
+  - 布局繁琐
+  - 局限性，不能在移动端很好的布局
+- flex布局：
+  - 操作方便，布局极为简单，移动端应用很广泛
+  - PC端浏览器支持情况较差
 
 ### flex布局父项常见属性
 
-* flex-direction：设置主轴方向
-  * row：默认值，从左到右
-  * row-reverse：从右到左
-  * column：从上到下
-  * column-reverse：从下到上
-* justify-content：设置主轴上子元素排列方式
-  * flex-start：默认值，左(x轴)/上(y轴)对齐
-  * flex-end：右(x轴)/下(y轴)对齐
-  * center：在主轴居中对齐
-  * space-around：平分剩余空间
-  * space-between：两端对齐
-* flex-wrap：设置子元素是否换行
-  * nowrap：默认值，不换行
-  * wrap：换行
-* align-items：设置侧轴上子元素的排列方式（单行）
-  * flex-start：默认值，左(x轴)/上(y轴)对齐
-  * flex-end：右(x轴)/下(y轴)对齐
-  * center：垂直(y轴)/水平(x轴)居中
-  * stretch：拉伸
-* align-content：设置侧轴上子元素的排列方式（多行）
-  * flex-start：默认值，左(x轴)/上(y轴)对齐
-  * flex-end：右(x轴)/下(y轴)对齐
-  * center：在侧轴中间显示
-  * space-around：子项在侧轴平分剩余空间
-  * space-between：子项在侧轴两端对齐
-  * stretch：设置子项元素高度平分父项元素高度(y轴)
-* flex-flow：flex-direction和flex-wrap的复合属性
-  * `flex-flow:row wrap`
+- flex-direction：设置主轴方向
+  - row：默认值，从左到右
+  - row-reverse：从右到左
+  - column：从上到下
+  - column-reverse：从下到上
+- justify-content：设置主轴上子元素排列方式
+  - flex-start：默认值，左(x轴)/上(y轴)对齐
+  - flex-end：右(x轴)/下(y轴)对齐
+  - center：在主轴居中对齐
+  - space-around：平分剩余空间
+  - space-between：两端对齐
+- flex-wrap：设置子元素是否换行
+  - nowrap：默认值，不换行
+  - wrap：换行
+- align-items：设置侧轴上子元素的排列方式（单行）
+  - flex-start：默认值，左(x轴)/上(y轴)对齐
+  - flex-end：右(x轴)/下(y轴)对齐
+  - center：垂直(y轴)/水平(x轴)居中
+  - stretch：拉伸
+- align-content：设置侧轴上子元素的排列方式（多行）
+  - flex-start：默认值，左(x轴)/上(y轴)对齐
+  - flex-end：右(x轴)/下(y轴)对齐
+  - center：在侧轴中间显示
+  - space-around：子项在侧轴平分剩余空间
+  - space-between：子项在侧轴两端对齐
+  - stretch：设置子项元素高度平分父项元素高度(y轴)
+- flex-flow：flex-direction和flex-wrap的复合属性
+  - `flex-flow:row wrap`
 
 ### flex布局子项常见属性
 
-* flex：定义子项所占份数
-* align-self：控制子项自己在侧轴上的排列方式
-  * 允许单个子项有与其他子项不一样的对齐方式，可覆盖align-tiems属性
-* order：定义子项的排列顺序
-  * 数值越小，排列越靠前，默认为0
+- flex：定义子项所占份数
+- align-self：控制子项自己在侧轴上的排列方式
+  - 允许单个子项有与其他子项不一样的对齐方式，可覆盖align-tiems属性
+- order：定义子项的排列顺序
+  - 数值越小，排列越靠前，默认为0
 
 ## 4.6 rem布局
 
-* 流式布局、flex布局在宽度上控制的布局，高度写死；
-* rem布局，最为直观的效果，页面全部元素现实**等比**缩放，包括文字，盒子大小；
+- 流式布局、flex布局在宽度上控制的布局，高度写死；
+- rem布局，最为直观的效果，页面全部元素现实**等比**缩放，包括文字，盒子大小；
 
 ### rem单位
 
-* rem单位，可以控制整个页面所有元素有关PX类；（宽、高、padding、margin、top...）只要是你设置数值的地方都可以实现控制；
-* 语法：
-  * root：1rem=HTML设置的font-size大小
+- rem单位，可以控制整个页面所有元素有关PX类；（宽、高、padding、margin、top...）只要是你设置数值的地方都可以实现控制；
+- 语法：
+  - root：1rem=HTML设置的font-size大小
 
+## 4.7 媒体查询
 
+- **作用：响应屏幕的变化；**
+- 可以根据屏幕不同的宽，从而获得不同的样式，然后实现不同的样式显示；
 
-# 5 js 基础
+**语法：**
+
+- CSS3的新语法：
+
+  - 是一个查询屏幕的过程
+
+  - 通过查询当前屏幕尺寸属于**哪个范围**，从而有**哪个范围**的样式生效
+
+  - 查询条件：`mediatype(media featrue)`
+
+  - ```css
+    @media mediatype and|not|only (media feature){
+        CSS-Code;
+    }
+    
+    ```
+
+- mediatype：媒体类型；查询不同的终端设备
+
+  | 值     | 解释说明                           |
+  | ------ | ---------------------------------- |
+  | all    | 用于所有设备                       |
+  | print  | 用于打印机和打印预览               |
+  | screen | 用于电脑屏幕，平板电脑，智能手机等 |
+
+- and|not|only：关键字
+
+  - and：可以将多个媒体特性连接到一起，相当于“且”的意思；最为常用；
+  - not：排除某个媒体类型，相当于“非”，可以省略
+  - only：指定某个特定的媒体类型，可以省略
+
+- (media feature)：媒体特性
+
+  - 对于屏幕screen，屏幕宽度就是一个特性
+
+    | 值        | 解释说明                           |
+    | --------- | ---------------------------------- |
+    | width     | 定义输出设备中页面可见区域的宽度   |
+    | min-width | 定义输出设备中页面最小可见区域宽度 |
+    | max-width | 定义输出设备中页面最大可见区域宽度 |
+
+    
+
+# 5. js 基础
 
 ## 5.1 JS数据类型
 
 ### 查看数据类型
 
-* typeof 数据;
-
-* typeof(数据);
+- typeof 数据;
+- typeof(数据);
 
 ### 数据类型转换
 
-####  其他类型 转数字类型
+#### 其他类型 转数字类型
 
 ##### Number()
 
@@ -538,25 +630,23 @@ normalize.css
 
 ##### parseInt()
 
-* parseInt() 函数可解析一个字符串，并返回一个整数 
+- parseInt() 函数可解析一个字符串，并返回一个整数 
 
-* 只能接受**字符串**，纯字符串、true、null、undefined都是NaN，字符串中的数字只能写在字符串的前面；
+- 只能接受**字符串**，纯字符串、true、null、undefined都是NaN，字符串中的数字只能写在字符串的前面；
 
-* 语法：parseInt(string, radix)
+- 语法：parseInt(string, radix)
 
-  * | 参数   | 描述                                                         |
+  - | 参数   | 描述                                                         |
     | ------ | ------------------------------------------------------------ |
     | string | 必需。要被解析的字符串。                                     |
     | radix  | 可选。表示要解析的数字的基数。该值介于 2 ~ 36 之间。<br />如果省略该参数或其值为 0，则数字将以 10 为基础来解析。如果它以 “0x” 或 “0X” 开头，将以 16 为基数。<br />如果该参数小于 2 或者大于 36，则 parseInt() 将返回 NaN。 |
 
-    
-
 ##### parseFloat()
 
-*  parseFloat这个方法用于转换字符串转换成小数(在编程中，小数也称浮点数)
-*  非数字类型只能接受**字符串**，纯字符串、true、null、undefined都是NaN；
-   * 如果**字符串前面是数字**，可以把前面的数字转化为数字类型；
-   * 如果字符串中前面不是数字，转NaN；
+- parseFloat这个方法用于转换字符串转换成小数(在编程中，小数也称浮点数)
+- 非数字类型只能接受**字符串**，纯字符串、true、null、undefined都是NaN；
+  - 如果**字符串前面是数字**，可以把前面的数字转化为数字类型；
+  - 如果字符串中前面不是数字，转NaN；
 
 #### 其它类型 转 字符串类型
 
@@ -574,7 +664,7 @@ undefined和null不能使用这个方式变成字符串；
 
 特点：返回一个布尔值。
 
-* 6种情况返回值为false
+- 6种情况返回值为false
 
   ```js
   var res1 = Boolean(0);
@@ -604,19 +694,19 @@ undefined和null不能使用这个方式变成字符串；
 
 ### 分支结构
 
-* if结构
-* switch-case结构
-* 三元表达式
+- if结构
+- switch-case结构
+- 三元表达式
 
 ### 循环结构
 
-* while结构
-* for循环
-* do-while循环
+- while结构
+- for循环
+- do-while循环
 
->break：**直接退出后面所有循环**；后面所有的循环都不会执行；
+> break：**直接退出后面所有循环**；后面所有的循环都不会执行；
 >
->continue：**跳过当前**循环；后面的循环还会执行；
+> continue：**跳过当前**循环；后面的循环还会执行；
 
 ## 5.3 数组
 
@@ -629,10 +719,10 @@ undefined和null不能使用这个方式变成字符串；
 
 ### 数组的声明
 
-* 字面量  
-  * var arr = []
-* 构造函数
-  * var arr = new Array();
+- 字面量  
+  - var arr = []
+- 构造函数
+  - var arr = new Array();
 
 ### 清空数组
 
@@ -647,14 +737,14 @@ arr.length = 0;
 
 ### return的作用
 
-* 修改返回值
-* 终止函数执行
+- 修改返回值
+- 终止函数执行
 
 ### arguments
 
-* 语法：可以获取所有传入函数的实参，形成一个伪数组；本质是个对象，可以循环遍历。
+- 语法：可以获取所有传入函数的实参，形成一个伪数组；本质是个对象，可以循环遍历。
 
-###  格式化日期的封装
+### 格式化日期的封装
 
 ```js
   function patchZero(v) {
@@ -715,7 +805,7 @@ obj.sayName = function(){
 
 ### Math
 
-* Math.random(x)；这个方法的作用是生成一个 [0,1) 之间的随机浮点数
+- Math.random(x)；这个方法的作用是生成一个 [0,1) 之间的随机浮点数
 
 ```js
 var r = Math.random();
@@ -724,7 +814,7 @@ console.log(r);
 
 ```
 
-* Math.floor(x)   把一个浮点数进行向下取整
+- Math.floor(x)   把一个浮点数进行向下取整
 
 ```js
 console.log(Math.floor(3.1));  // 3
@@ -734,10 +824,10 @@ console.log(Math.floor(-3.9)); // -4
 
 ```
 
-* Math.ceil(x) 把一个浮点数进行向上取整
-* Math.round(x)  把一个浮点数进行四舍五入取整
-* Math.abs(x)  求一个数的绝对值 正数
-* Math.max(x,y...)  求多个数字中的最大值，同理 Math.min(x,y...);
+- Math.ceil(x) 把一个浮点数进行向上取整
+- Math.round(x)  把一个浮点数进行四舍五入取整
+- Math.abs(x)  求一个数的绝对值 正数
+- Math.max(x,y...)  求多个数字中的最大值，同理 Math.min(x,y...);
 
 ### Date
 
@@ -804,7 +894,7 @@ console.log(Date.now());
 
 #### 与字符串互转
 
-* join 用于将数组中的多元素以指定分隔符连接成一个字符串
+- join 用于将数组中的多元素以指定分隔符连接成一个字符串
 
 ```js
 var arr = ['刘备','关羽','张飞'];
@@ -813,7 +903,7 @@ console.log(str);  // 刘备|关羽|张飞
 
 ```
 
-* split 字符串的方法：转数组，后面为分隔的字符
+- split 字符串的方法：转数组，后面为分隔的字符
 
 ```js
 // 这个方法用于将一个字符串以指定的符号分割成数组
@@ -825,7 +915,7 @@ console.log(arr);
 
 #### 查找元素
 
-* indexOf：根据元素查找索引，如果这个元素在数组中，返回索引，否则返回-1
+- indexOf：根据元素查找索引，如果这个元素在数组中，返回索引，否则返回-1
 
 ```js
 var arr = [10,20,30]
@@ -834,7 +924,7 @@ console.log(arr.indexOf(40));  // -1
 
 ```
 
-* findIndex方法用于查找满足条件的第一个元素的索引，如果没有，则返回-1
+- findIndex方法用于查找满足条件的第一个元素的索引，如果没有，则返回-1
 
 ```js
 var arr = [10, 20, 30];
@@ -854,9 +944,9 @@ console.log(res2);
 
 #### 遍历数组
 
-* for循环
+- for循环
 
-* forEach：遍历数组
+- forEach：遍历数组
 
   ```js
   var arr = [3, 2, 5, 7, 4, 6, 4];
@@ -871,7 +961,7 @@ console.log(res2);
 
   
 
-* filter() 筛选出数组中满足条件的数组，**返回是一个新的数组**；
+- filter() 筛选出数组中满足条件的数组，**返回是一个新的数组**；
 
   ```js
   // 数组的filter方法用于将数组中满足条件的元素筛选出来
@@ -886,11 +976,11 @@ console.log(res2);
   
   ```
 
-* some() 
+- some() 
 
 #### 拼接与截取
 
-* concat 拼接数组，**不改变原数组，创建新数组返回**
+- concat 拼接数组，**不改变原数组，创建新数组返回**
 
   ```js
   // 数组的concat方法的作用是把多个数组合并成一个新的数组
@@ -902,7 +992,7 @@ console.log(res2);
   
   ```
 
-* slice 截取数组：**不对原数组操作，返回的是新的数组**；
+- slice 截取数组：**不对原数组操作，返回的是新的数组**；
 
   ```js
   var arr = ['a','b','c','d','e'];
@@ -919,7 +1009,7 @@ console.log(res2);
 
 #### 复制
 
-* 方法一：for循环
+- 方法一：for循环
 
   ```js
   var newArr_1 = [];
@@ -931,7 +1021,7 @@ console.log(res2);
 
   
 
-* 方法二：forEach遍历
+- 方法二：forEach遍历
 
   ```js
   var newArr_2 = [];
@@ -941,7 +1031,7 @@ console.log(res2);
   
   ```
 
-* 方法三：filter
+- 方法三：filter
 
   ```js
   var arr_1 = arr_2.filter(function(item,index,arr){
@@ -950,7 +1040,7 @@ console.log(res2);
   
   ```
 
-* 方法四：concat拼接
+- 方法四：concat拼接
 
   ```js
   // 复制一个数组
@@ -958,7 +1048,7 @@ console.log(res2);
   
   ```
 
-* 方法五：slice截取
+- 方法五：slice截取
 
   ```js
   var new_arr = arr.slice();
@@ -993,9 +1083,9 @@ console.log(res2);
 
 #### 拼接与截取
 
-* +
+- +
 
-* concat 拼接
+- concat 拼接
 
   ```js
   // 这个方法用于连接多个字符串，其作用相当于 + 操作符
@@ -1004,7 +1094,7 @@ console.log(res2);
   
   ```
 
-* substring 截取字符串，不操作原字符；返回截取出来的字符串
+- substring 截取字符串，不操作原字符；返回截取出来的字符串
 
   ```js
   // 这个方法用于获取字符串中的部分字符
@@ -1016,7 +1106,7 @@ console.log(res2);
   
   ```
 
-* slice
+- slice
 
   ```js
   // 这个方法用于获取字符串中的部分字符
@@ -1032,7 +1122,7 @@ console.log(res2);
   
   ```
 
-* substr
+- substr
 
   ```js
   // 这个方法用于获取字符串中的部分字符
@@ -1047,28 +1137,28 @@ console.log(res2);
 
 ## 6.1 DOM
 
-* js组成：
-  * ES：js基础知识
-  * DOM：**文档对象模型**
-    * DOM节点：标签本身、标签上的属性、标签内文本
-  * BOM：浏览器被当作一个对象。
+- js组成：
+  - ES：js基础知识
+  - DOM：**文档对象模型**
+    - DOM节点：标签本身、标签上的属性、标签内文本
+  - BOM：浏览器被当作一个对象。
 
 ### 事件类型
 
 #### 点击事件：click
 
-* xx.onclick=function(){}
+- xx.onclick=function(){}
 
 #### scroll事件
 
-* 谁有滚动条注册给谁，浏览器注册给window
+- 谁有滚动条注册给谁，浏览器注册给window
 
-####  焦点事件：focus、blur
+#### 焦点事件：focus、blur
 
-* 注册给有光标的盒子 input、textarea；
-* 事件类型：
-  * 有光标时：获得焦点focus；
-  * 无光标时：失去焦点 blur
+- 注册给有光标的盒子 input、textarea；
+- 事件类型：
+  - 有光标时：获得焦点focus；
+  - 无光标时：失去焦点 blur
 
 ```js
 ipt.onfocus = function(){
@@ -1085,27 +1175,26 @@ ipt.onblur =  function(){
 
 - 按键按下：keydown
 - 按键弹起：keyup
-
 - 按下哪个键？
   - 事件对象.keyCode，这个属性被称为  键盘码 ，每个按键对应的数字是不一样 ，只需要判断数字，就知道按下的按键是哪一个； keyCode==13 回车键
   - 按下了ctrl：事件对象里面有一个属性 ctrlKey ；如果是true，按下了ctrl键
 
 #### 鼠标移动事件：mouseover（mouseenter）、mouseout（mouseleave）、mousemove
 
-* 鼠标移入、移出某个元素或移动的时候，触发事件
-* mouseover-mouseout支持事件冒泡，mouseenter-mouseleave不支持事件冒泡
+- 鼠标移入、移出某个元素或移动的时候，触发事件
+- mouseover-mouseout支持事件冒泡，mouseenter-mouseleave不支持事件冒泡
 
 #### 动画结束事件
 
-* transitionend：元素的过渡动画结束的时候触发；
-* animationend：会在帧动画结束时触发；
-  * 注意：
+- transitionend：元素的过渡动画结束的时候触发；
+- animationend：会在帧动画结束时触发；
+  - 注意：
     - 不能使用on的方式注册，只能使用addEventListener的方式注册
     - 如果帧动画是无限次的，不会触发该事件
 
 ### 操作 类样式-classList
 
-* add 添加类名：
+- add 添加类名：
 
 ```js
 // 参数：多个类名，之间用逗号隔开
@@ -1113,7 +1202,7 @@ box.classList.add(类名1,类名2...)；
 
 ```
 
-* remove 移除类名：
+- remove 移除类名：
 
 ```js
 // 参数：多个类名，可以是多个，多个之间用逗号隔开
@@ -1121,7 +1210,7 @@ box.classList.remove(类名1,类名2...)
 
 ```
 
-* toggle 切换类名：
+- toggle 切换类名：
 
 ```js
 // 参数： 要切换的类名
@@ -1196,7 +1285,7 @@ document.querySelectorAll(css选择器1,css选择器2...);
 
 ### 操作属性
 
-* 一般情况下是操作自定义属性多一些；
+- 一般情况下是操作自定义属性多一些；
 
 ```js
 // 作用： 根据属性名获取属性值
@@ -1227,9 +1316,9 @@ dom.addEventListener('click', function() {
 
 ### 事件三阶段
 
-* 捕获、到达目标、冒泡；
+- 捕获、到达目标、冒泡；
 
-* **阻止冒泡**
+- **阻止冒泡**
 
   ```js
   dom.addEventListener('click',function(e){
@@ -1255,7 +1344,7 @@ dom.addEventListener('click', function() {
 
 
 
-* 属性：
+- 属性：
 
   ```js
   // 鼠标位置
@@ -1279,7 +1368,7 @@ dom.addEventListener('click', function() {
   
   ```
 
-* 方法：
+- 方法：
 
   ```js
   // 阻止冒泡
@@ -1307,7 +1396,7 @@ dom.addEventListener('click', function() {
 
 ### 获取元素对象属性
 
-####  位置
+#### 位置
 
 ```js
 // 得到的是某个元素距离他的offsetParent元素的水平距离
@@ -1325,7 +1414,7 @@ dom.addEventListener('click', function() {
 
 #### 元素实际宽度和高度
 
-* 元素的实际宽高 = border+padding+content（width和height）
+- 元素的实际宽高 = border+padding+content（width和height）
 
 ```js
 // 返回值：数值；
@@ -1355,18 +1444,18 @@ dom.style.width；
 
 #### 方法：创建节点
 
-* innerHTML(属性)*
-* document.write()：
-  * 把页面已经存在的结构覆盖；
-  * 可以解析HTML结构；
-* document.createElement()：
-  * 根据指定的标签名，创建一个新的元素
+- innerHTML(属性)*
+- document.write()：
+  - 把页面已经存在的结构覆盖；
+  - 可以解析HTML结构；
+- document.createElement()：
+  - 根据指定的标签名，创建一个新的元素
 
 #### 方法：添加节点
 
-* appendChild：
+- appendChild：
 
-  * 给指定的父元素追加子元素，**作为最后一个子元素；从后添加一个子元素**
+  - 给指定的父元素追加子元素，**作为最后一个子元素；从后添加一个子元素**
 
     ```js
     // 元素.appendChild(子元素);
@@ -1375,9 +1464,9 @@ dom.style.width；
     
     ```
 
-* insertBefore：
+- insertBefore：
 
-  * 在某个子元素之前，插入新的子元素
+  - 在某个子元素之前，插入新的子元素
 
     ```js
     //父元素.insertBefore(新的子元素,插入谁之前的旧的子元素)
@@ -1398,14 +1487,14 @@ dom.style.width；
 
 #### DOM节点获取方式
 
-* 方法获取
+- 方法获取
 
   ```js
   var first = document.querySelector('ul > li:first-child');
   
   ```
 
-* 根据DOM节点 获取 DOM节点（属性获取）
+- 根据DOM节点 获取 DOM节点（属性获取）
 
 - 获取子元素：可以得到某个元素之下的所有的子元素的集合，一个**伪数组**
 
@@ -1441,9 +1530,9 @@ dom.style.width；
 
 ### onload
 
-* 页面加载完毕的时候执行
-* 页面加载完毕：页面所需的静态资源全部加载完毕
-* 静态资源： **html文件、css文件、js文件、图片...**
+- 页面加载完毕的时候执行
+- 页面加载完毕：页面所需的静态资源全部加载完毕
+- 静态资源： **html文件、css文件、js文件、图片...**
 
 ```javascript
 window.onload = function(){
@@ -1454,13 +1543,12 @@ window.onload = function(){
 
 ### 定时器
 
-* 一次性定时器
-  * setTimeout
-  * clearTimeout   清除定时器
-
-* 永久性定时器
-  * setInterval
-  * clearInterval     清除永久定时器
+- 一次性定时器
+  - setTimeout
+  - clearTimeout   清除定时器
+- 永久性定时器
+  - setInterval
+  - clearInterval     清除永久定时器
 
 #### 【案例】获取验证码-倒计时
 
@@ -1507,13 +1595,13 @@ btn.onclick = function(){
 
 ### 属性对象 location
 
-* 负责管理浏览器地址栏相关的行为和信息的对象；
+- 负责管理浏览器地址栏相关的行为和信息的对象；
 
 ### localStorage 和 JSON
 
 #### localStorage
 
-* 实现数据的本地存储
+- 实现数据的本地存储
 
 ```js
 // 注意： 如果存储的是对象之类的复杂类型，需要先把复杂类型转换为JSON格式的字符串，再存进去，因为本地存储只能存储字符串
@@ -1547,9 +1635,9 @@ JSON.parse(json格式字符串);
 
 # 7. jQuery
 
-* 入门
+- 入门
 
-  * 入口函数
+  - 入口函数
 
     ```js
     $(function(){
@@ -1558,17 +1646,16 @@ JSON.parse(json格式字符串);
     
     ```
 
-
 ## 7.1 jQuery筛选方法
 
-* **元素.parent()**：父级
-* **元素.parents()**：所有祖先，有参数时为指定
-* **元素.children()**：所有子集，有参数时为指定子集
-* **元素.find()**：所有后代，有参数时为指定
-* **元素.siblings()**：所有兄弟，有参数时为指定
-* **元素.eq(index)**：指定索引元素
-* 元素.nextAll()：后面的
-* 元素.prevAll()：前面的
+- **元素.parent()**：父级
+- **元素.parents()**：所有祖先，有参数时为指定
+- **元素.children()**：所有子集，有参数时为指定子集
+- **元素.find()**：所有后代，有参数时为指定
+- **元素.siblings()**：所有兄弟，有参数时为指定
+- **元素.eq(index)**：指定索引元素
+- 元素.nextAll()：后面的
+- 元素.prevAll()：前面的
 
 ## 7.2 jQuery 操作
 
@@ -1613,13 +1700,13 @@ JSON.parse(json格式字符串);
 
 #### 遍历
 
-* ```js
+- ```js
   $().each(function(index,domEle) {})
   //遍历匹配的每一个元素，主要做DOM处理
   
   ```
 
-* ```js
+- ```js
   $.each(object,function(index,element){})
   //可用于遍历任何对象。主要用于数组处理，比如数组，对象
   
@@ -1634,77 +1721,77 @@ $("<li></li>")
 
 #### 添加
 
-* 内部添加
+- 内部添加
 
-  * ```js
+  - ```js
     element.append("内容")   //把内容放入匹配元素的内部最后面
     
     ```
 
-  * ``` js
+  - ```js
     element.prepend("内容")   //把内容放入匹配元素内部的最前面
     
     ```
 
-* 外部添加
+- 外部添加
 
-  * ```js
+  - ```js
     element.after("内容")  //把内容放入目标元素后面
     
     ```
 
-  * ```js
+  - ```js
     element.before("内容")    //把内容放入目标元素的最前面
     
     ```
 
 #### 删除
 
-* ```js
+- ```js
   element.remove()  //是移除匹配的元素本身
   
   ```
 
-* ```js
+- ```js
   element.empty()   //删除匹配的元素集合中的所有子节点`
   
   ```
 
-* ```js
+- ```js
   element.html("")   //清空匹配的元素内容
   
   ```
 
 ### jQuery 尺寸操作
 
-* width()，height()
-  * 只计算width和height
-* innerWidth()，innerHeight()
-  * 包含padding+width/height
-* outerWIdth()，ouerHeight()
-  * 包含padding、border、width/height
-* outerWIdth(true)，outerHeight(true)
-  * 包含padding、border、margin、width/height
+- width()，height()
+  - 只计算width和height
+- innerWidth()，innerHeight()
+  - 包含padding+width/height
+- outerWIdth()，ouerHeight()
+  - 包含padding、border、width/height
+- outerWIdth(true)，outerHeight(true)
+  - 包含padding、border、margin、width/height
 
 ### jQuery 位置操作
 
-* **offset()**  设置或获取元素偏移
+- **offset()**  设置或获取元素偏移
 
-  * 距离**文档**的距离【top，left】
+  - 距离**文档**的距离【top，left】
 
-  * 设置：
+  - 设置：
 
     ```js
     offset({top:10,left:10})
     
     ```
 
-* **position()**  获取元素偏移
+- **position()**  获取元素偏移
 
-  * 返回被选元素相对于**带有定位的父级**的偏移坐标，如果父级都没有定位，则以文档为准。
-  * 只读，不能设置
+  - 返回被选元素相对于**带有定位的父级**的偏移坐标，如果父级都没有定位，则以文档为准。
+  - 只读，不能设置
 
-* **scrollTop()、scrollLeft()** 设置或获取元素被卷起的头部和左侧
+- **scrollTop()、scrollLeft()** 设置或获取元素被卷起的头部和左侧
 
 ## 7.3 jQuery 动画效果
 
@@ -1783,15 +1870,15 @@ fadeTo([[speed],opacity,[easing],[fn]])【注意fadeTo必须写两个参数，sp
 
 ## 7.4 jQuery 内容文本值
 
-* 普通元素内容 html()
-  * 获取：html()
-  * 设置：html("内容")
-* 普通元素文本内容 text()
-  * 获取：text()
-  * 设置：text("内容")
-* 表单的值 val()
-  * 获取：val()
-  * 设置：val("内容")
+- 普通元素内容 html()
+  - 获取：html()
+  - 设置：html("内容")
+- 普通元素文本内容 text()
+  - 获取：text()
+  - 设置：text("内容")
+- 表单的值 val()
+  - 获取：val()
+  - 设置：val("内容")
 
 
 
@@ -1799,16 +1886,16 @@ fadeTo([[speed],opacity,[easing],[fn]])【注意fadeTo必须写两个参数，sp
 
 ## 8.1 ES6 类class
 
-* **创建类**
-  * 语法：class 类名 {}
-    * 类名首字母大写
-    * 类要抽取公共属性方法，定义一个类
+- **创建类**
+  - 语法：class 类名 {}
+    - 类名首字母大写
+    - 类要抽取公共属性方法，定义一个类
 
 ## 函数进阶
 
 ### 递归函数
 
-* 函数调用其本身
+- 函数调用其本身
 
   ```js
   function fn() {
@@ -1828,8 +1915,8 @@ fadeTo([[speed],opacity,[easing],[fn]])【注意fadeTo必须写两个参数，sp
 
 ## 9.1 ajax请求方式
 
-* GET：浏览器的目的是希望从服务器得到一些东西
-* POST：浏览器希望将数据提交给服务器
+- GET：浏览器的目的是希望从服务器得到一些东西
+- POST：浏览器希望将数据提交给服务器
 
 ## 9.2 Ajax发送GET请求
 
@@ -1858,15 +1945,15 @@ xhr.onload=function(){
 
 ### GET请求传参
 
-* 什么时候需要带请求参数
-  * 请求参数又叫查询字符串
-  * 一般用于告诉浏览器此次请求的目的，比如查询什么，删除哪条记录等等
-* url携带查询字符串
-  * 格式：http://www.baidu.com/s?q=word&sug=5017
-  * 查询字符串(querystring):
-    * url中==问号后面==携带的就是get请求传参的数据，叫做查询字符串
-    * 格式：aa==xxx&bb=yyy
-    * 查询字符串知识和传输少量数据
+- 什么时候需要带请求参数
+  - 请求参数又叫查询字符串
+  - 一般用于告诉浏览器此次请求的目的，比如查询什么，删除哪条记录等等
+- url携带查询字符串
+  - 格式：http://www.baidu.com/s?q=word&sug=5017
+  - 查询字符串(querystring):
+    - url中==问号后面==携带的就是get请求传参的数据，叫做查询字符串
+    - 格式：aa==xxx&bb=yyy
+    - 查询字符串知识和传输少量数据
 
 ### POST请求
 
@@ -1876,12 +1963,12 @@ xhr.onload=function(){
 
 ### let 和 const
 
-* let
+- let
 
-  * let定义变量，变量不可以再次定义，但可以改变其值
-  * 具有块级作用域
-  * 没有变量提升，必须先定义再使用
-  * let声明的变量不会压到window对象中，是独立的
+  - let定义变量，变量不可以再次定义，但可以改变其值
+  - 具有块级作用域
+  - 没有变量提升，必须先定义再使用
+  - let声明的变量不会压到window对象中，是独立的
 
   ```js
   let a = 2;
@@ -1899,11 +1986,59 @@ xhr.onload=function(){
 
   
 
-* const
+- const
 
-  * 使用const关键字定义常量
-  * 常量是不可变的，一旦定义，则不能修改其值
-  * 初始化常量时，必须给初始值
-  * 具有块级作用域
-  * 没有变量提升，必须先定义再使用
-  * 常量也是独立的，定义后不会压入到window对象中
+  - 使用const关键字定义常量
+  - 常量是不可变的，一旦定义，则不能修改其值
+  - 初始化常量时，必须给初始值
+  - 具有块级作用域
+  - 没有变量提升，必须先定义再使用
+  - 常量也是独立的，定义后不会压入到window对象中 
+
+# 11. vue
+
+## 11.1 基础-系统指令
+
+### v-cloak
+
+- 解决页面初次渲染时 页面模板闪屏现象
+
+- ```vue
+  <style>
+      [v-cloak]{
+          display:none
+      }
+  </style>
+  
+  <div v-cloak>
+      
+  </div>
+  
+  ```
+
+- 可以一次性 将v-cloak引用在实例视图上  避免多次写入标签
+
+## 11.2 路由
+
+### hash模式
+
+- 问题：浏览器回退url改变页面不跳转
+
+- 解决方案：
+
+  - APP.vue文件中添加hashchange事件
+
+  - ```js
+    mounted () {
+        // 检测浏览器路由改变页面不刷新问题,hash模式的工作原理是hashchange事件
+        window.addEventListener('hashchange', () => {
+          let currentPath = window.location.hash.slice(1)
+          if (this.$route.path !== currentPath) {
+            this.$router.push(currentPath)
+          }
+        }, false)
+      },
+    
+    ```
+
+    

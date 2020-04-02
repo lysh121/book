@@ -12,7 +12,15 @@ base可以设置整体链接的打开状态
 </head>
 ```
 
-## 1.2 定义选项列表
+* **target**:
+  * _blank：浏览器总在一个新打开、未命名的窗口中载入目标文档
+  * _self：默认目标，使得目标文档载入并显示在相同的框架或者窗口中作为原文档
+  * _parent：文档载入父窗口或者包含来超链接引用的框架的框架集
+  * _top：这个目标使得文档载入包含这个超链接的窗口，将会清除所有被包含的框架并将文档载入整个浏览器窗口
+
+## 1.2 form表单
+
+### 1.2.1 定义选项列表
 
 datalist 标签定义选项列表，与input标签配合使用
 
@@ -27,7 +35,7 @@ datalist 标签定义选项列表，与input标签配合使用
 </datalist>
 ```
 
-## 1.3 表单分组
+### 1.2.2 表单分组
 
 fieldset 元素可将表单内的相关元素分组，打包
 
@@ -39,9 +47,9 @@ fieldset 元素可将表单内的相关元素分组，打包
 </fieldset>
 ```
 
-## 1.4 input相关
+### 1.2.3 input相关
 
-### 最多字符数（maxlength）
+#### 最多字符数（maxlength）
 
 ```html
 <input type="password" name="pass" maxlength="6">
@@ -49,7 +57,7 @@ fieldset 元素可将表单内的相关元素分组，打包
 
 
 
-### 自动记录input标签输入内容（autocomplete）
+#### 自动记录input标签输入内容（autocomplete）
 
 * 使用要求
 
@@ -64,166 +72,157 @@ fieldset 元素可将表单内的相关元素分组，打包
     </form>
     ```
 
-### 新增的input type属性值
+#### 新增的input type属性值
 
-* email：输入邮箱格式
+* **email：输入邮箱格式**
 
   ```html
   <input type="email">
   ```
 
-* tel：输入手机号码格式
+* **tel：输入手机号码格式**
 
   ```html
   <input type="tel">
   ```
 
-* url：输入url格式
+* **url：输入url格式**
 
   ```html
   <input type="url">
   ```
 
-* number：输入数字格式
+* **number：输入数字格式**
 
   ```html
   <input type="number">
-  
   ```
 
-* search：搜索框（体现语义化）
+* **search：搜索框（体现语义化）**
 
   ```html
   <input type="search">
-  
   ```
 
-* range：自由拖动滑块
+* **range：自由拖动滑块**
 
   ```html
   <input type="range">
-  
   ```
 
-* time：小时分钟
+* **time：小时分钟**
 
   ```html
   <input type="time">
-  
   ```
 
-* date：年月日
+* **date：年月日**
 
   ```html
   <input type="date">
-  
   ```
 
-* datetime：时间
+* **datetime：时间**
 
   ```html
   <input type="datetime">
-  
   ```
 
-* month：年月
+* **month：年月**
 
   ```html
   <input type="month">
-  
   ```
 
-* week：年 星期
+* **week：年 星期**
 
   ```html
   <input tyoe="week">
-  
   ```
 
-* color：颜色
+* **color：颜色**
 
   ```html
   <input type="color">
-  
   ```
 
   
 
-### 常用新属性
+#### 常用新属性
 
-* placeholder：占位符提供可描述输入字段预期值的提示信息
+* **placeholder：占位符提供可描述输入字段预期值的提示信息**
 
   ```html
   <input type="text" placeholder="请输入用户名">
-  
   ```
 
-* autofocus：规定当页面加载时 input 元素应该自动获得焦点
+* **autofocus：规定当页面加载时 input 元素应该自动获得焦点**
 
   ```html
   <input type="text" autofocus>
-  
   ```
 
-* multiple：多文件上传
+* **multiple：多文件上传**
 
   ```html
   <input type="file" multiple>
-  
   ```
 
-* accept：规定上传的文件类型
+* **accept：规定上传的文件类型**
 
   ```html
   <input type="file" accept=".jpg,.png" >
   <input type="file" accept="image/*" >
-  
   ```
 
-* autocomplete：规定表单是否应该启用自动完成功能 有两个值，一个是on，一个是off，on代表记录已经输入的值
+* **autocomplete：规定表单是否应该启用自动完成功能 有两个值，一个是on，一个是off，on代表记录已经输入的值**
 
   ```html
   <input type="text" autocomplete='on'>
-  
   ```
 
-* required：必填项
+* **required：必填项**
 
   ```html
   <input type="text" required>
-  
   ```
 
-* accesskey：规定激活（使元素获得焦点）元素的快捷键 采用alt+字母的形式
+* **accesskey：规定激活（使元素获得焦点）元素的快捷键 采用alt+字母的形式**
 
   ```html
   <input type="text" accesskey="s">
-  
   ```
 
-* readonly：只读
+* **readonly：只读**
 
   ```html
   <input type="text" readonly>
-  
   ```
 
-  
+## 1.3 table表格
 
-## 1.5 多媒体标签
+* **表格属性**
+  * cellspacing 单元格与单元格之间的距离
+  * cellpadding 单元格与边框之间的距离
+* **表格标题**
+  * caption
+* **合并单元格**
+  * rowspan 合并行
+  * colspan 合并列
+
+## 1.4 多媒体标签
 
 * **embed** 可以用来插入各种多媒体，格式可以是Midi、Wav、AIFF、AU、MP3等等。
 
   ```html
   <embed src="http://..." allowFullscreen="true" quality="high" width="480" height="400" align></embed>
-  
   ```
 
 
 * **audio** 音频播放，autoplay自动播放；controls显示控件；loop循环播放
 * **video** 视频播放
 
-## 1.6 H5新增标签
+## 1.5 H5新增标签
 
 H5具有语义的布局标签：
 
@@ -251,48 +250,202 @@ H5具有语义的布局标签：
 
 # 2 CSS
 
-## 2.1 字体
+## 2.1 选择器
+
+### 复合选择器
+
+#### 属性选择器
+
+* [href] 属性选择器标签
+* [href="abc.html"] 完整属性选择标签
+* [href^="abc"]以什么开头
+* [href$=".html"]以什么结尾
+* [href*="b"]包含即可
+
+#### 伪类选择器
+
+* **链接伪类选择器**
+
+  * :link  未访问的链接
+
+  * :visited  已访问的链接
+
+  * :hover   鼠标移动到链接
+
+  * :active   选定的链接
+
+    > 被点击访问过的超链接样式不再具有hover和active了，解决方式为设置css样式时按照l-v-h-a的顺序设置。
+
+* **结构伪类选择器**
+
+  * E:first-child      匹配父元素下第一个类型为E的子元素
+  * E:last-child       匹配父元素下最后一个类型为E的子元素
+  * E:nth-child(n)  匹配父元素下第n个类型为E的子元素
+  * E:nth-child(even)   偶数
+  * E:nth-child(odd)    奇数
+  * E:first-of-type与E:first-child区别
+  * :first-child 匹配的是某父元素的第一个子元素，可以说是结构上的第一个子元素。
+  * :first-of-type 匹配的是某父元素下相同类型子元素中的第一个
+
+#### 占位符选择器
+
+* **::placeholder**
+
+## 2.2 文本文字样式
+
+### 2.2.1 font
 
 - **font-style:字体风格**
+
   - normal 默认值
   - italic：斜体字体样式
   - oblique：倾斜字体样式
 
-* **font：综合设置字体样式**
+- **font-weight 文本粗细**
+
+  | 属性 | 字重                         |
+  | ---- | ---------------------------- |
+  | 100  | Thin                         |
+  | 200  | Extra Light(Ultra Light)     |
+  | 300  | Light                        |
+  | 400  | Regular(Normal、Book、Roman) |
+  | 500  | Medium                       |
+  | 600  | Semi Bold(Demi Bold)         |
+  | 700  | Bold                         |
+  | 800  | Extra Bold(Ultra Bold)       |
+  | 900  | Black(Heavy)                 |
+
+- **font：综合设置字体样式**
 
   选择器{font：font-style font-weight font-size/line-height font-family}
 
-* letter-spacing、word-spacing字间距
+### 2.2.2 text
 
-  * letter-spacing中英文都生效
-    * 可用于消除inline-block元素间的换行符空格间隙问题。
-  * word-spacing只对英文单词生效
+* **letter-spacing 字间距**
+  * 中英文都生效
+  * 可用于消除inline-block元素间的换行符空格间隙问题。
+* **word-spacing 字符间距**
+  * 只对英文单词生效
+* **text-decoration 文本装饰**
+  * none
+  * underline 下划线
+  * overline 上划线
+  * line-through 删除线
+  * blink 闪烁文本（只有火狐浏览器支持）
+  * inherit 从父元素继承
+* **text-indent 首行缩进**
 
-## 2.2 伪类选择器
+### 2.2.3 溢出文字隐藏
 
-### 链接伪类选择器
+* **white-space**
 
-* :link  未访问的链接
-* :visited  已访问的链接
-* :hover   鼠标移动到链接
-* :active   选定的链接
+  * normal
+  * nowrap 强制一行内显示文字
 
-> 被点击访问过的超链接样式不再具有hover和active了，解决方式为设置css样式时按照l-v-h-a的顺序设置。
+* **text-overflow 文字溢出**
 
-###  结构伪类选择器
+  * clip 不显示省略号，简单的裁切
+  * ellipsis 当前文本溢出时显示省略标记
 
-* E:first-child      匹配父元素下第一个类型为E的子元素
-* E:last-child       匹配父元素下最后一个类型为E的子元素
-* E:nth-child(n)  匹配父元素下第n个类型为E的子元素
-* E:nth-child(even)   偶数
-* E:nth-child(odd)    奇数
-* E:first-of-type与E:first-child区别
-* :first-child 匹配的是某父元素的第一个子元素，可以说是结构上的第一个子元素。
-  * :first-of-type 匹配的是某父元素下相同类型子元素中的第一个
+* **使用三部曲**
+
+  * 单行显示
+
+  ```css
+  /*1. 先强制一行内显示文本*/
+      white-space: nowrap;
+  /*2. 超出的部分隐藏*/
+      overflow: hidden;
+  /*3. 文字用省略号替代超出的部分*/
+      text-overflow: ellipsis;
+  ```
+
+  * 多行显示
+
+  ```css
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  /*控制显示几行*/
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  ```
+
+## 2.3 background
+
+* **background-attachment  附着**
+  * scroll :背景图像是随对象内容滚动
+  * fixed : 背景图像固定(固定在body上)
+
+## 2.4 定位 position
+
+#### 定位模式
+
+* **静态定位（static)**
+  * 不会动 标准流 元素默认的定位方式
+
+* **相对定位（relative）**
+  * 相对定位的元素不脱标
+  * 位置偏移永远基于自身位置
+* **绝对定位（absolute）**
+  * 脱离标准流的控制，不占据原来的位置
+  * 绝对定位的元素，如果所有父元素都没有使用定位，位置偏移基于浏览器；如果父元素有定位，位置偏移基于离他最近的使用了定位的父元素位置偏移
+  * 绝对定位的元素有了行内块的显示特点
+  * 子绝父相
+  * 绝对定位的元素位置偏移基于浏览器的时候，会随着滚动条滚动
+* **固定定位（fixed）**
+  * 固定定位的元素位置偏移基于浏览器可视窗口，不会随滚动条滚动
+
+## 2.5 元素的显示隐藏
+
+* **display 显示**
+
+  none隐藏对象 隐藏之后不再保留位置 相反的是block
+
+* **visibility 可见性**
+
+  * visible 对象可见
+  * hidden 对象隐藏，隐藏之后保留原有位置
+
+* **overflow 溢出**
+
+  * visible 溢出部分可见
+  * hidden 溢出隐藏
+  * scroll 总显示滚动条
+  * auto 超出才自动生成滚动条
+
+## 2.6 CSS用户界面样式
+
+* **鼠标样式 cursor**
+
+  * default 默认值
+  * pointer 小手
+  * move 移动
+  * text 文本
+  * not-allowed 禁止
+  * help 帮助
+
+* **轮廓线 outline**
+
+  与 borlder 用法几乎相同，一般用outline: none;
+
+* **防止拖拽文本域**
+
+  一般用 resize: none;
 
 # 3 CSS3
 
-## 3.1 2D转换
+## 3.1 过渡（transition）
+
+```css
+transition: 要过渡的属性  花费时间  运动曲线  何时开始;
+	transition-property  /*规定应用过渡的 CSS 属性的名称*/
+	transition-duration  /*定义过渡效果花费的时间。默认是 0*/
+	transition-timing-function	/*规定过渡效果的时间曲线。默认是 "ease", "linear"匀速*/
+	transition-delay	/*规定过渡效果何时开始。默认是 0*/
+```
+
+## 3.2 2D转换（transform）
 
 ### 位移
 
@@ -330,7 +483,7 @@ H5具有语义的布局标签：
   * 放大：若设置的值大于1表示放大多少倍
   * 若设置一个值时，表示宽高一起缩放多少倍。
 
-## 3.2 动画
+## 3.3 动画（animation）
 
 ### 定义动画
 
@@ -364,7 +517,6 @@ H5具有语义的布局标签：
         结束状态
     }
 }
-
 ```
 
 ### 调用动画
@@ -382,7 +534,7 @@ H5具有语义的布局标签：
 >| animation-fill-mode       | 规定动画结束后状态。保持forwards，回到起始位置backwards      |
 >| animation                 | 所有动画属性的简写属性，顺序为：动画名称、动画持续时间、运动曲线、延迟时间、动画次数、是否逆播、是否保持结束状态 |
 
-## 3.3 3D转换
+## 3.4 3D转换（transform）
 
 ### 介绍
 
@@ -418,7 +570,6 @@ H5具有语义的布局标签：
 
   ```html
   <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  
   ```
 
 - 配置解析
@@ -513,9 +664,54 @@ normalize.css
 * 语法：
   * root：1rem=HTML设置的font-size大小
 
+## 4.7 媒体查询
 
+* **作用：响应屏幕的变化；**
+* 可以根据屏幕不同的宽，从而获得不同的样式，然后实现不同的样式显示；
 
-# 5 js 基础
+**语法：**
+
+* CSS3的新语法：
+
+  * 是一个查询屏幕的过程
+
+  * 通过查询当前屏幕尺寸属于**哪个范围**，从而有**哪个范围**的样式生效
+
+  * 查询条件：`mediatype(media featrue)`
+
+  * ```css
+    @media mediatype and|not|only (media feature){
+        CSS-Code;
+    }
+    ```
+
+* mediatype：媒体类型；查询不同的终端设备
+
+  | 值     | 解释说明                           |
+  | ------ | ---------------------------------- |
+  | all    | 用于所有设备                       |
+  | print  | 用于打印机和打印预览               |
+  | screen | 用于电脑屏幕，平板电脑，智能手机等 |
+
+* and|not|only：关键字
+
+  * and：可以将多个媒体特性连接到一起，相当于“且”的意思；最为常用；
+  * not：排除某个媒体类型，相当于“非”，可以省略
+  * only：指定某个特定的媒体类型，可以省略
+
+* (media feature)：媒体特性
+
+  * 对于屏幕screen，屏幕宽度就是一个特性
+
+    | 值        | 解释说明                           |
+    | --------- | ---------------------------------- |
+    | width     | 定义输出设备中页面可见区域的宽度   |
+    | min-width | 定义输出设备中页面最小可见区域宽度 |
+    | max-width | 定义输出设备中页面最大可见区域宽度 |
+
+    
+
+# 5. js 基础
 
 ## 5.1 JS数据类型
 
@@ -549,7 +745,6 @@ normalize.css
     | string | 必需。要被解析的字符串。                                     |
     | radix  | 可选。表示要解析的数字的基数。该值介于 2 ~ 36 之间。<br />如果省略该参数或其值为 0，则数字将以 10 为基础来解析。如果它以 “0x” 或 “0X” 开头，将以 16 为基数。<br />如果该参数小于 2 或者大于 36，则 parseInt() 将返回 NaN。 |
 
-    
 
 ##### parseFloat()
 
@@ -597,7 +792,6 @@ undefined和null不能使用这个方式变成字符串；
   
   var res4 = Boolean(undefined); 
   console.log(res4); //输出false
-  
   ```
 
 ## 5.2 流程控制
@@ -638,7 +832,6 @@ undefined和null不能使用这个方式变成字符串；
 
 ```js
 arr.length = 0;
-
 ```
 
 
@@ -671,7 +864,6 @@ arr.length = 0;
     var s = now.getSeconds();
     return y + '-' + patchZero(m) + '-' + patchZero(d) + ' ' + patchZero(h) + ":" + patchZero(mm) + ':' + patchZero(s);
   }
-
 ```
 
 
@@ -687,7 +879,6 @@ arr.length = 0;
 ```javascript
 var obj = new Object(); // 这是一个没有属性和方法的对象
 console.log(obj);
-
 ```
 
 - 字面量：
@@ -695,7 +886,6 @@ console.log(obj);
 ```javascript
 var obj = {}; // 这也是一个没有属性和方法对象，其本质和构造函数创建的对象是一样的
 console.log(obj,typeof obj);
-
 ```
 
 #### 添加
@@ -708,7 +898,6 @@ obj.name = "";
 obj.sayName = function(){  
 	
 }
-
 ```
 
 ## 5.6 内置对象
@@ -721,7 +910,6 @@ obj.sayName = function(){
 var r = Math.random();
 // 每次执行等到的数字都不一样
 console.log(r);
-
 ```
 
 * Math.floor(x)   把一个浮点数进行向下取整
@@ -731,7 +919,6 @@ console.log(Math.floor(3.1));  // 3
 console.log(Math.floor(3.9));  // 3
 console.log(Math.floor(-3.1)); // -4
 console.log(Math.floor(-3.9)); // -4
-
 ```
 
 * Math.ceil(x) 把一个浮点数进行向上取整
@@ -745,7 +932,6 @@ console.log(Math.floor(-3.9)); // -4
 
 ```js
 var date = new Date(); // 得到的是当前时间的日期对象
-
 ```
 
 - 获取年月日时分秒
@@ -761,7 +947,6 @@ console.log(date.getHours()); // 小时，0-23
 console.log(date.getMinutes()); // 分钟 ， 0-59
 console.log(date.getSeconds()); // 秒数 ， 0-59
 console.log(date.getMilliseconds()); // 毫秒 0-999 ， 1秒 = 1000毫秒
-
 ```
 
 - 创建一个**指定日期**的对象
@@ -772,7 +957,6 @@ var date = new Date('2019-01-01');
 
 // 分别传入年月日时分秒。注意传入的月份是从0开始算的
 var date = new Date(2019,0,1,12,33,12);
-
 ```
 
 - 获取从1970年1月1日到现在的总毫秒数，**常说的时间戳**
@@ -785,7 +969,6 @@ console.log(date.getTime());
 console.log(1*date);
 
 console.log(Date.now());
-
 ```
 
 
@@ -810,7 +993,6 @@ console.log(Date.now());
 var arr = ['刘备','关羽','张飞'];
 var str = arr.join('|'); 
 console.log(str);  // 刘备|关羽|张飞
-
 ```
 
 * split 字符串的方法：转数组，后面为分隔的字符
@@ -820,7 +1002,6 @@ console.log(str);  // 刘备|关羽|张飞
 var str = '刘备|关羽|张飞';
 var arr = str.split('|');
 console.log(arr);
-
 ```
 
 #### 查找元素
@@ -831,7 +1012,6 @@ console.log(arr);
 var arr = [10,20,30]
 console.log(arr.indexOf(30));  // 2
 console.log(arr.indexOf(40));  // -1
-
 ```
 
 * findIndex方法用于查找满足条件的第一个元素的索引，如果没有，则返回-1
@@ -849,7 +1029,6 @@ var res2 = arr.findIndex(function (item) {
 });
 // -1
 console.log(res2);
-
 ```
 
 #### 遍历数组
@@ -866,7 +1045,6 @@ console.log(res2);
       arr.forEach(function(item, index) {
           console.log(item, index);
       })
-  
   ```
 
   
@@ -881,7 +1059,6 @@ console.log(res2);
     return item < 2000;
   });
   // fitler方法的的参数要求是一个函数，这个函数接收2个参数：item是数组中的每个元素，index是item对应的索引,arr代表当前的数组
-  
   
   
   ```
@@ -899,7 +1076,6 @@ console.log(res2);
   var arr3 = [7,8,9];
   var res = arr1.concat(arr2,arr3);
   console.log(res);
-  
   ```
 
 * slice 截取数组：**不对原数组操作，返回的是新的数组**；
@@ -914,7 +1090,6 @@ console.log(res2);
   
   // 复制数组：如果省略两个参数，start默认是0，end默认是length
   var arr_1 = arr_2.slice();
-  
   ```
 
 #### 复制
@@ -926,7 +1101,6 @@ console.log(res2);
       for (var index = 0; index < newArr_1.length; index++) {
           newArr_1[index] = arr[index];
       }
-  
   ```
 
   
@@ -938,7 +1112,6 @@ console.log(res2);
       arr.forEach(function(item, index) {
           newArr_2.push(item);
       });
-  
   ```
 
 * 方法三：filter
@@ -947,7 +1120,6 @@ console.log(res2);
   var arr_1 = arr_2.filter(function(item,index,arr){
     return item;
   });
-  
   ```
 
 * 方法四：concat拼接
@@ -955,14 +1127,12 @@ console.log(res2);
   ```js
   // 复制一个数组
   var arr_1 = arr.concat();
-  
   ```
 
 * 方法五：slice截取
 
   ```js
   var new_arr = arr.slice();
-  
   ```
 
   
@@ -988,7 +1158,6 @@ console.log(res2);
   // a.charCodeAt(); 返回ASCII 码
   var res = str.charCodeAt(0);
   console.log(res);
-
 ```
 
 #### 拼接与截取
@@ -1001,7 +1170,6 @@ console.log(res2);
   // 这个方法用于连接多个字符串，其作用相当于 + 操作符
   var res = "abc".concat('def','ghi');
   console.log(res);
-  
   ```
 
 * substring 截取字符串，不操作原字符；返回截取出来的字符串
@@ -1013,7 +1181,6 @@ console.log(res2);
   // 从索引2开始，到索引4结束，得到之间的字符，不包含索引4的字符
   var res = str.substring(2,4);
   console.log(res);
-  
   ```
 
 * slice
@@ -1029,7 +1196,6 @@ console.log(res2);
   console.log(str.slice(-6,7));
   console.log(str.slice(2,-5));
   console.log(str.slice(-9,-7));
-  
   ```
 
 * substr
@@ -1038,7 +1204,6 @@ console.log(res2);
   // 这个方法用于获取字符串中的部分字符
   var str = '我爱中华人民共和国';
   var res = str.substr(2,2);// 人索引2开始，总共获取2个字符，第二个参数为个数
-  
   ```
 
   
@@ -1078,7 +1243,6 @@ ipt.onfocus = function(){
 ipt.onblur =  function(){
   //当你希望处理鼠标光标失去的时候所做的事情，就在这里做
 }
-
 ```
 
 #### 键盘事件：keydown,keyup
@@ -1110,7 +1274,6 @@ ipt.onblur =  function(){
 ```js
 // 参数：多个类名，之间用逗号隔开
 box.classList.add(类名1,类名2...)；
-
 ```
 
 * remove 移除类名：
@@ -1118,7 +1281,6 @@ box.classList.add(类名1,类名2...)；
 ```js
 // 参数：多个类名，可以是多个，多个之间用逗号隔开
 box.classList.remove(类名1,类名2...)
-
 ```
 
 * toggle 切换类名：
@@ -1126,7 +1288,6 @@ box.classList.remove(类名1,类名2...)
 ```js
 // 参数： 要切换的类名
 box.classList.toggle(类名)
-
 ```
 
 ### 案例：全选与反选
@@ -1175,7 +1336,6 @@ var cks = document.getElementsByClassName("ck");
         }
 
     }
-
 ```
 
 
@@ -1191,7 +1351,6 @@ document.querySelector(css选择器);
 // 返回值：伪数组；for，但是上面有forEach方法
 document.querySelectorAll(css选择器1,css选择器2...);
 // 可简单判别下和获取通过ID获取的DOM节点有什么区别
-
 ```
 
 ### 操作属性
@@ -1210,7 +1369,6 @@ document.querySelectorAll(css选择器1,css选择器2...);
 
 // 作用：删除某个属性
 元素.removeAttribute(属性名)
-
 ```
 
 ### 添加事件监听
@@ -1222,7 +1380,6 @@ addEventListener：添加事件监听，可以多次注册事件；
 dom.addEventListener('click', function() {
     
 })
-
 ```
 
 ### 事件三阶段
@@ -1238,7 +1395,6 @@ dom.addEventListener('click', function() {
     e.stopPropagation();//位置无所谓
     ...
   });
-  
   ```
 
   
@@ -1250,7 +1406,6 @@ dom.addEventListener('click', function() {
 事件源.on+事件类型 = function(事件对象){   }
 
 事件源.addEventListener(事件类型,function(事件对象){});
-
 ```
 
 
@@ -1276,7 +1431,6 @@ dom.addEventListener('click', function() {
   // 事件的绑定对象，就是是绑定在哪个DOM节点上 和 this一样
   // 前面说的事件源
   e.currentTarget==this -----> true
-  
   ```
 
 * 方法：
@@ -1300,7 +1454,6 @@ dom.addEventListener('click', function() {
   dom_a.addEventListener('click', function(e) {
       e.preventDefault();
   });
-  
   ```
 
   
@@ -1320,7 +1473,6 @@ dom.addEventListener('click', function() {
 
 // 找到一个有定位的父亲元素，如果亲生父亲没有定位，会一直往上找，直到找打有定位的父亲，或者body；
 元素的offsetParent
-
 ```
 
 #### 元素实际宽度和高度
@@ -1338,7 +1490,6 @@ dom.addEventListener('click', function() {
 
 // 获取和设置
 dom.style.width；
-
 ```
 
 #### 可视区域宽度、高度
@@ -1346,7 +1497,6 @@ dom.style.width；
 ```js
 元素.clientWidth - 可视区域的宽度
 元素.clientHeight - 可视区域的高度
-
 ```
 
 
@@ -1372,7 +1522,6 @@ dom.style.width；
     // 元素.appendChild(子元素);
     var li = document.createElement('li');
     ul.appendChild(li);
-    
     ```
 
 * insertBefore：
@@ -1383,7 +1532,6 @@ dom.style.width；
     //父元素.insertBefore(新的子元素,插入谁之前的旧的子元素)
     var second = document.querySelector('.second');
     ul.insertBefore(li,second);
-    
     ```
 
 #### 属性：修改节点
@@ -1402,7 +1550,6 @@ dom.style.width；
 
   ```js
   var first = document.querySelector('ul > li:first-child');
-  
   ```
 
 * 根据DOM节点 获取 DOM节点（属性获取）
@@ -1411,14 +1558,12 @@ dom.style.width；
 
 ```
 父元素.children
-
 ```
 
 - 获取父元素
 
 ```js
 元素.parentNode
-
 ```
 
 - 获取兄弟元素
@@ -1426,14 +1571,12 @@ dom.style.width；
 ```js
 元素.nextElementSibling  -  得到下一个兄弟元素
 元素.previousElementSibling - 得到上一个兄弟元素
-
 ```
 
 ### 删除DOM节点
 
 ```js
 // 父元素.removeChild(要删除的子元素);
-
 
 ```
 
@@ -1449,7 +1592,6 @@ dom.style.width；
 window.onload = function(){
     // 想要获取图片的宽高，就需要等待图片加载完成后才执行后面的函数；
 }
-
 ```
 
 ### 定时器
@@ -1500,7 +1642,6 @@ btn.onclick = function(){
       
   },1000);
 }
-
 ```
 
 
@@ -1529,7 +1670,6 @@ localStorage.removeItem(健);
 
 //全部清空
 localStorageclear();                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
-
 ```
 
 #### JSON
@@ -1542,7 +1682,6 @@ JSON.stringify(对象);
 // 将json格式的字符串转换为对象
 // 返回值：依赖于你的json格式字符串，可能返回数组，或者是对象....
 JSON.parse(json格式字符串);
-
 ```
 
 # 7. jQuery
@@ -1555,7 +1694,6 @@ JSON.parse(json格式字符串);
     $(function(){
         ...
     })
-    
     ```
 
 
@@ -1595,7 +1733,6 @@ JSON.parse(json格式字符串);
 
 //切换类名
 元素.toggle("类名")
-
 ```
 
 ### 属性操作
@@ -1616,20 +1753,17 @@ JSON.parse(json格式字符串);
 * ```js
   $().each(function(index,domEle) {})
   //遍历匹配的每一个元素，主要做DOM处理
-  
   ```
 
 * ```js
   $.each(object,function(index,element){})
   //可用于遍历任何对象。主要用于数组处理，比如数组，对象
-  
   ```
 
 #### 创建
 
 ```js
 $("<li></li>")
-
 ```
 
 #### 添加
@@ -1638,41 +1772,34 @@ $("<li></li>")
 
   * ```js
     element.append("内容")   //把内容放入匹配元素的内部最后面
-    
     ```
 
   * ``` js
     element.prepend("内容")   //把内容放入匹配元素内部的最前面
-    
     ```
 
 * 外部添加
 
   * ```js
     element.after("内容")  //把内容放入目标元素后面
-    
     ```
 
   * ```js
     element.before("内容")    //把内容放入目标元素的最前面
-    
     ```
 
 #### 删除
 
 * ```js
   element.remove()  //是移除匹配的元素本身
-  
   ```
 
 * ```js
   element.empty()   //删除匹配的元素集合中的所有子节点`
-  
   ```
 
 * ```js
   element.html("")   //清空匹配的元素内容
-  
   ```
 
 ### jQuery 尺寸操作
@@ -1696,7 +1823,6 @@ $("<li></li>")
 
     ```js
     offset({top:10,left:10})
-    
     ```
 
 * **position()**  获取元素偏移
@@ -1720,7 +1846,6 @@ toggle([speed,[easing],[fn]])
 （2）speed：三种预定速度之一的字符串(“slow”,“normal”, or “fast”)或表示动画时长的毫秒数值(如：1000)。
 （3）easing：(Optional) 用来指定切换效果，默认是“swing”，可用参数“linear”。
 （4）fn:  回调函数，在动画完成时执行的函数，每个元素执行一次。
-
 ```
 
 ### 显示隐藏上下滑动效果（slide）
@@ -1735,7 +1860,6 @@ slideToggle([speed,[easing],[fn]])
 （2）speed：三种预定速度之一的字符串(“slow”,“normal”, or “fast”)或表示动画时长的毫秒数值(如：1000)。
 （3）easing：(Optional) 用来指定切换效果，默认是“swing”，可用参数“linear”。
 （4）fn:  回调函数，在动画完成时执行的函数，每个元素执行一次
-
 ```
 
 ### 显示隐藏淡入淡出效果（fade）
@@ -1752,7 +1876,6 @@ fadeTo([[speed],opacity,[easing],[fn]])【注意fadeTo必须写两个参数，sp
 （3）easing：(Optional) 用来指定切换效果，默认是“swing”，可用参数“linear”。
 （4）fn:  回调函数，在动画完成时执行的函数，每个元素执行一次。
 
-
 ```
 
 ### 自定义动画（anmiate）
@@ -1765,7 +1888,6 @@ fadeTo([[speed],opacity,[easing],[fn]])【注意fadeTo必须写两个参数，sp
 （2）speed：三种预定速度之一的字符串(“slow”,“normal”, or “fast”)或表示动画时长的毫秒数值(如：1000)。
 （3）easing：(Optional) 用来指定切换效果，默认是“swing”，可用参数“linear”。
 （4）fn:  回调函数，在动画完成时执行的函数，每个元素执行一次。
-
 ```
 
 ### 动画队列及其停止排队方法
@@ -1777,7 +1899,6 @@ fadeTo([[speed],opacity,[easing],[fn]])【注意fadeTo必须写两个参数，sp
 
 (1）stop() 方法用于停止动画或效果。
 (2)  注意： stop() 写到动画或者效果的前面， 相当于停止结束上一次的动画
-
 
 ```
 
@@ -1819,7 +1940,6 @@ fadeTo([[speed],opacity,[easing],[fn]])【注意fadeTo必须写两个参数，sp
               fn();
           }
           fn();
-  
   ```
 
   
@@ -1851,7 +1971,6 @@ xhr.onload=function(){
     //使用xhr的response属性来接收服务器响应的结果
     console.log(xhr.response)
 }
-
 
 
 ```
@@ -1894,7 +2013,6 @@ xhr.onload=function(){
   }
   console.log(b);   //报错
   
-  
   ```
 
   
@@ -1906,4 +2024,48 @@ xhr.onload=function(){
   * 初始化常量时，必须给初始值
   * 具有块级作用域
   * 没有变量提升，必须先定义再使用
-  * 常量也是独立的，定义后不会压入到window对象中
+  * 常量也是独立的，定义后不会压入到window对象中 
+
+# 11. vue
+
+## 11.1 基础-系统指令
+
+### v-cloak
+
+* 解决页面初次渲染时 页面模板闪屏现象
+
+* ```vue
+  <style>
+      [v-cloak]{
+          display:none
+      }
+  </style>
+  
+  <div v-cloak>
+      
+  </div>
+  ```
+
+* 可以一次性 将v-cloak引用在实例视图上  避免多次写入标签
+
+## 11.2 路由
+
+### hash模式
+
+* 问题：浏览器回退url改变页面不跳转
+
+* 解决方案：
+
+  * APP.vue文件中添加hashchange事件
+
+  * ```js
+    mounted () {
+        // 检测浏览器路由改变页面不刷新问题,hash模式的工作原理是hashchange事件
+        window.addEventListener('hashchange', () => {
+          let currentPath = window.location.hash.slice(1)
+          if (this.$route.path !== currentPath) {
+            this.$router.push(currentPath)
+          }
+        }, false)
+      }
+    ```

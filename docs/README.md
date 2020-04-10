@@ -55,7 +55,13 @@ fieldset 元素可将表单内的相关元素分组，打包
 <input type="password" name="pass" maxlength="6">
 ```
 
+#### textarea宽高调整
 
+* **resize**
+  * none:禁止调整
+  * both:可调宽高
+  * horizontal:可调宽
+  * vertical:可调高
 
 #### 自动记录input标签输入内容（autocomplete）
 
@@ -449,8 +455,9 @@ transition: 要过渡的属性  花费时间  运动曲线  何时开始;
 
 ### 位移
 
-* 语法：**`transform:translate(x,y)`**
-* 说明：
+* **语法：**
+  * transform:translate(x,y)
+* **说明：**
   * translate最多设置2个值，第一个值是水平，第二个值是垂直。
   * translate偏移的位置，参照的是自身原有的位置。
   * translate若设置负值时，会实现逆方向移动。
@@ -460,24 +467,27 @@ transition: 要过渡的属性  花费时间  运动曲线  何时开始;
 
 ### 旋转
 
-* 语法：**`transform:retate(角度)`**
-* 说明：
+* **语法：**
+  * transform:retate(角度)
+* **说明：**
   * 单位：deg
   * 正值：顺时针旋转
   * 负值：逆时针旋转
 
 ### 旋转源点设置
 
-* 语法：**`transform-origin:水平 垂直`**
-* 说明：
+* **语法：**
+  * transform-origin:水平 垂直
+* **说明：**
   * 默认是按照中心旋转的
   * 水平取值：left|center|right|像素
   * 垂直取值：top|center|bottom|像素
 
 ### 缩放
 
-* 语法：`**transform:scale(number,number)**`
-* 说明：
+* **语法：**
+  * transform:scale(number,number)
+* **说明：**
   * 最多设置2个值，第一个值表示缩放宽度，第二个值表示高度
   * 缩小：若设置的值大于0小于1表示缩小
   * 放大：若设置的值大于1表示放大多少倍
@@ -538,24 +548,24 @@ transition: 要过渡的属性  花费时间  运动曲线  何时开始;
 
 ### 介绍
 
-* 特点：
+* **特点：**
   * 近大远小
   * 物体后面遮挡不可见
 
 ### 位移
 
-* 语法：
+* **语法：**
   * reansform: translateX(位移量)[translateY、translateZ]
 
 ### 透视
 
-* 语法：
+* **语法：**
   * perspective：像素值
   * 设置给父元素
 
 ### 旋转
 
-* 语法：
+* **语法：**
   * reansform:rotateX(角度)[rotateY、rotateZ]
 
 ### 立体空间设置
@@ -566,13 +576,13 @@ transition: 要过渡的属性  花费时间  运动曲线  何时开始;
 
 ## 4.1 meta标签配置视口
 
-- 配置方式
+- **配置方式**
 
   ```html
   <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   ```
 
-- 配置解析
+- **配置解析**
 
   | 属性          | 解释说明                                             |
   | ------------- | ---------------------------------------------------- |
@@ -582,7 +592,7 @@ transition: 要过渡的属性  花费时间  运动曲线  何时开始;
   | minimum-scale | 最小缩放比，大于0的数字                              |
   | user-scalable | 用户是否可以缩放，yes或no（1或0）                    |
 
-- 标准视口设置
+- **标准视口设置**
 
   - 视口宽度和设备保持一致
   - 视口的默认缩放比例1.0
@@ -598,7 +608,7 @@ normalize.css
 
 ## 4.3 盒子模型
 
-* 语法：
+* **语法：**
   * box-sizing:border-box;（ie盒子模型：css中设置的width中包含了border和padding）
   * box-sizing:content-box;（W3C标准盒子模型：盒子宽度为width+border+padding）
 
@@ -606,51 +616,51 @@ normalize.css
 
 ### 传统布局和flex布局
 
-* 传统布局：
+* **传统布局：**
   * 兼容性好
   * 布局繁琐
   * 局限性，不能在移动端很好的布局
-* flex布局：
+* **flex布局：**
   * 操作方便，布局极为简单，移动端应用很广泛
   * PC端浏览器支持情况较差
 
 ### flex布局父项常见属性
 
-* flex-direction：设置主轴方向
+* **flex-direction：设置主轴方向**
   * row：默认值，从左到右
   * row-reverse：从右到左
   * column：从上到下
   * column-reverse：从下到上
-* justify-content：设置主轴上子元素排列方式
+* **justify-content：设置主轴上子元素排列方式**
   * flex-start：默认值，左(x轴)/上(y轴)对齐
   * flex-end：右(x轴)/下(y轴)对齐
   * center：在主轴居中对齐
   * space-around：平分剩余空间
   * space-between：两端对齐
-* flex-wrap：设置子元素是否换行
+* **flex-wrap：设置子元素是否换行**
   * nowrap：默认值，不换行
   * wrap：换行
-* align-items：设置侧轴上子元素的排列方式（单行）
+* **align-items：设置侧轴上子元素的排列方式（单行）**
   * flex-start：默认值，左(x轴)/上(y轴)对齐
   * flex-end：右(x轴)/下(y轴)对齐
   * center：垂直(y轴)/水平(x轴)居中
   * stretch：拉伸
-* align-content：设置侧轴上子元素的排列方式（多行）
+* **align-content：设置侧轴上子元素的排列方式（多行）**
   * flex-start：默认值，左(x轴)/上(y轴)对齐
   * flex-end：右(x轴)/下(y轴)对齐
   * center：在侧轴中间显示
   * space-around：子项在侧轴平分剩余空间
   * space-between：子项在侧轴两端对齐
   * stretch：设置子项元素高度平分父项元素高度(y轴)
-* flex-flow：flex-direction和flex-wrap的复合属性
-  * `flex-flow:row wrap`
+* **flex-flow：flex-direction和flex-wrap的复合属性**
+  * flex-flow:row wrap
 
 ### flex布局子项常见属性
 
-* flex：定义子项所占份数
-* align-self：控制子项自己在侧轴上的排列方式
+* **flex：**定义子项所占份数
+* **align-self：**控制子项自己在侧轴上的排列方式
   * 允许单个子项有与其他子项不一样的对齐方式，可覆盖align-tiems属性
-* order：定义子项的排列顺序
+* **order：**定义子项的排列顺序
   * 数值越小，排列越靠前，默认为0
 
 ## 4.6 rem布局
@@ -685,7 +695,7 @@ normalize.css
     }
     ```
 
-* mediatype：媒体类型；查询不同的终端设备
+* **mediatype：媒体类型；查询不同的终端设备**
 
   | 值     | 解释说明                           |
   | ------ | ---------------------------------- |
@@ -693,13 +703,13 @@ normalize.css
   | print  | 用于打印机和打印预览               |
   | screen | 用于电脑屏幕，平板电脑，智能手机等 |
 
-* and|not|only：关键字
+* **and|not|only：关键字**
 
   * and：可以将多个媒体特性连接到一起，相当于“且”的意思；最为常用；
   * not：排除某个媒体类型，相当于“非”，可以省略
   * only：指定某个特定的媒体类型，可以省略
 
-* (media feature)：媒体特性
+* **(media feature)：媒体特性**
 
   * 对于屏幕screen，屏幕宽度就是一个特性
 

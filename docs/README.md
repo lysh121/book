@@ -380,8 +380,12 @@ H5具有语义的布局标签：
 ## 2.3 background
 
 * **background-attachment  附着**
-  * scroll :背景图像是随对象内容滚动
-  * fixed : 背景图像固定(固定在body上)
+  * scroll：背景图像是随对象内容滚动
+  * fixed：背景图像固定(固定在body上)
+* **background-size 背景缩放**
+  * cover：把背景图像扩展至足够大，以使背景图像完全覆盖背景区域。
+  * contain：把图像图像扩展至最大尺寸，以使其宽度和高度完全适应内容区域
+  * 百分比，参照背景图所在的盒子大小
 
 ## 2.4 定位 position
 
